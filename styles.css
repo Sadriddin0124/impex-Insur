@@ -1,0 +1,36 @@
+.main_color {
+    color: #F58635;
+}
+
+.text_hover:hover {
+    color: #F58635;
+    cursor: pointer;
+}
+
+.bg_main {
+    background: #F58635 !important;
+}
+
+.bg_primary {
+    background: #203046;
+}
+
+.border_main {
+    border: 2px solid #F58635;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.card_gr {
+    background: linear-gradient(180deg, rgba(32, 48, 70, 0.2) 0%, #203046 100%);
+}
+
+.scroll_none {
+    scrollbar-width: none;
+}
+
+.nowrap {
+    white-space: nowrap;
+}

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div>
+        <header style="min-height: 80vh;">
+            <nav class="w-100 position-fixed bg-white d-flex z-3 flex-column align-items-center justify-content-center pb-0 pb-lg-4">
+                <div class="container d-flex justify-content-between py-3">
+                    <div class="d-flex align-items-center gap-4">
+                        <img src="./assets/logo.png" alt="Logo">
+                        <span class="d-none d-xl-block fs-6 text_hover pointer-event">ФИЗИЧЕСКИМ ЛИЦАМ</span>
+                        <span class="d-none d-xl-block fs-6 text_hover pointer-event">ЮРИДИЧЕСКИМ ЛИЦАМ</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="d-md-none d-sm-block d-none border-0 bg-transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="d-md-flex d-none border border-dark rounded-1 overflow-hidden">
+                            <button class="border-0 bg-transparent"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" class="border-0" style="outline: none;">
+                        </div>
+                        <button class="d-md-block d-none bg_main border-0 rounded-5 py-1 text-light"><i class="fa-regular fa-eye"></i></button>
+                        <button class="d-md-block d-none bg_main border-0 rounded-5 py-1 text-light"><i class="fa-solid fa-volume-high"></i></button>
+                        <span class="d-sm-block d-none fs-3 main_color">|</span>
+                        <a href="tel: +998712075800" class="d-sm-block d-none text-decoration-none text-dark">+998 (71) 207-58-00</a>
+                        <select class="d-sm-block d-none bg_main rounded-1 border-0 text-light p-1">
+                            <option value="ru">RU</option>
+                            <option value="en">EN</option>
+                            <option value="uz">UZ</option>
+                        </select>
+                        <button class="btn fs-4 d-sm-none d-block"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+                <div class="bg_primary d-none d-lg-flex justify-content-between container px-5 py-3 rounded-2">
+                    <ul class="m-0 p-0 d-flex gap-4">
+                        <li class="list-unstyled">
+                            <a href="#" class="text-light text-decoration-none">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="text-light text-decoration-none">О НАС</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="text-light text-decoration-none">ВСЕ УСЛУГИ</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="text-light text-decoration-none">ОТКРЫТЫЕ ДАННЫЕ</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="text-light text-decoration-none">НОВОСТИ</a>
+                        </li>
+                        <li class="list-unstyled">
+                            <a href="#" class="text-light text-decoration-none">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <button class="d-none d-xl-block fs-6 border-0 bg_main text-light rounded-1">СТРАХОВОЙ СЛУЧАЙ</button>
+                        <button class="d-none d-xl-block fs-6 border-0 bg_main text-light rounded-1">ЕВРОПРОТОКОЛ</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="w-100 h-100 position-relative" style="height: 100%;">
+                <img src="./assets/hero_img.png" alt="Hero Image" class="w-100 object-fit-cover" style="height: 100vh;">
+                <div class="position-absolute top-50 d-none d-lg-flex justify-content-center w-100">
+                    <img src="./assets/hero_logo.png" alt="Hero logo">
+                </div>
+                <div class="d-lg-none position-absolute top-0 w-100 h-75 d-flex flex-column align-items-center justify-content-end">
+                    <img src="./assets/hero_logo2.png" alt="Hero logo">
+                    <h1 class="text-white fs-1 w-50 text-center">Ваше спокойствие – наша высшая цель!</h1>
+                </div>
+            </div>
+        </header>
+        <section class="w-100 mb-5 d-flex justify-content-center py-3 px-3" style="padding-bottom: 100px;">
+            <div class="container d-flex flex-column gap-3">
+                <h2 class="fs-2">
+                    <span class="fw-bold">Предложения</span>
+                    <span>для Вас</span>
+                </h2>
+                <div class="row gap-3">
+                    <div style="height: 290px; min-width: 223px;" class="position-relative py-3 col-md-2 card_height rounded-3 shadow" >
+                        <img src="./assets/product1.png" alt="Product 1" class="position-absolute start-0 top-0 object-fit-cover w-100 h-100">
+                        <span>Автомобили</span>
+                        <h6 class="fw-bold">ОСАГО</h6>
+                    </div>
+                    <div style="height: 290px; min-width: 223px;" class="position-relative py-3 col-md-2 card_height rounded-3 shadow">
+                        <img src="./assets/product2.png" alt="Product 1" class="position-absolute start-0 top-0 object-fit-cover w-100 h-100">
+                        <span>Автомобили</span>
+                        <h6 class="fw-bold">КАСКО</h6>
+                    </div>
+                    <div style="height: 290px; min-width: 223px;" class="position-relative py-3 col-md-2 card_height rounded-3 shadow">
+                        <img src="./assets/product3.png" alt="Product 1" class="position-absolute start-0 top-0 object-fit-cover w-100 h-100">
+                        <span>Путешествия</span>
+                        <h6 class="fw-bold">Страхование в путешествии</h6>
+                    </div>
+                    <div style="height: 290px; min-width: 223px;" class="position-relative py-3 col-md-2 card_height rounded-3 shadow">
+                        <img src="./assets/product4.png" alt="Product 1" class="position-absolute start-0 top-0 object-fit-cover w-100 h-100">
+                        <span>Имущество</span>
+                        <h6 class="fw-bold">Страхование квартиры</h6>
+                    </div>
+                    <div style="height: 290px; min-width: 223px;" class="position-relative py-3 col-md-2 rounded-3 bg_main ms- shadow mb-32 d-flex align-items-end justify-content-between text-white">
+                        <img src="./assets/product5.png" alt="Product 1" class="position-absolute start-0 top-0 object-fit-cover w-100 h-100 z-0">
+                        <div>
+                            <span>Посмотреть</span>
+                            <h6 class="fw-bold">все продукты</h6>
+                        </div>
+                        <button class="d-flex justify-content-center align-items-center py-1 border-white border border-2 cursor position-relative z-2 bg-transparent text-light rounded-circle"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-100 pt-5 d-flex justify-content-center mt-5 position-relative px-3" style="min-height: 900px; margin-top: 50px;">
+            <img src="./assets/insurance_bg.png" alt="Insurance bg" class="position-absolute d-xl-block d-none w-100" style="height: 85%;top: 120px;">
+            <div class="container position-relative z-2 d-flex flex-column justify-content-between pb-5" style="gap:100px;">
+                <div class="d-flex flex-lg-row flex-column-reverse align-items-end" style="margin-top: -50px;">
+                    <div class="d-flex flex-column gap-5 justify-content-end">
+                        <h2 class="fs-2">
+                            <span class="fw-bold">Немного</span>
+                            <span>о нас</span>
+                        </h2>
+                        <img src="./assets/insurance.png" alt="Insurance" class="d-lg-none d-block w-100">
+                        <div class="bg-light py-5 rounded-start-3 d-flex flex-column gap-2 align-items-start ps-4 pe-2">
+                            <h2 class="fs-1 fw-bold">АО «IMPEX INSURANCE»</h2>
+                            <p class="w-100">Компания, основанная в 2021 году в Узбекистане ,  обладающая полным набором страховых услуг, представляет высококачественные продукты и обслуживание благодаря опытной команде профессионалов и уставному капиталу в 45 млрд сумов.</p>
+                            <button class="btn bg_main text-white">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="w-50 w-auto h-100 d-lg-flex d-none align-items-end">
+                        <img src="./assets/insurance.png" alt="INsurance" style="height: 90%;">
+                    </div>
+                </div>
+                <div class="position-relative z-2 mt-5">
+                    <h2 class="fs-3 text-white mb-3">
+                        <span class="fw-normal">Почему</span>
+                        <span class="fw-bold">«IMPEX INSURANCE»?</span>
+                    </h2>
+                    <div class="w-100 row gap-5">
+                        <div style="min-width: 260px;" class="col-lg-2 col-xl bg-xl-white bg-light shadow p-4 rounded-2 d-flex flex-column align-items-start ">
+                            <div class=" bg_main p-2 rounded-circle">
+                                <img src="./assets/insurance1.png" alt="Insurance">
+                            </div>
+                            <h5 class="fw-bold mb-0 main_color mt-5">120 000+</h5>
+                            <span class="fs-6">Довольных клиентов</span>
+                        </div>
+                        <div style="min-width: 260px;" class="col-lg-2 col-xl bg-xl-white bg-light shadow p-4 rounded-2 d-flex flex-column align-items-start ">
+                            <div class=" bg_main p-2 rounded-circle">
+                                <img src="./assets/insurance2.png" alt="Insurance">
+                            </div>
+                            <h5 class="fw-bold mb-0 main_color mt-5">120 000+</h5>
+                            <span class="fs-6">Довольных клиентов</span>
+                        </div>
+                        <div style="min-width: 260px;" class="col-lg-2 col-xl bg-xl-white bg-light shadow p-4 rounded-2 d-flex flex-column align-items-start ">
+                            <div class=" bg_main p-2 rounded-circle">
+                                <img src="./assets/insurance3.png" alt="Insurance">
+                            </div>
+                            <h5 class="fw-bold mb-0 main_color mt-5">120 000+</h5>
+                            <span class="fs-6">Довольных клиентов</span>
+                        </div>
+                        <div style="min-width: 260px;" class="col-lg-2 col-xl bg-xl-white bg-light shadow p-4 rounded-2 d-flex flex-column align-items-start ">
+                            <div class=" bg_main p-2 rounded-circle">
+                                <img src="./assets/insurance4.png" alt="Insurance">
+                            </div>
+                            <h5 class="fw-bold mb-0 main_color mt-5">120 000+</h5>
+                            <span class="fs-6">Довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="d-flex justify-content-center pb-3 pt-1">
+                <h2 class="container" style="font-size: 24px;">
+                    <span>Наши</span>
+                    <span>партнеры</span>
+                </h2>
+            </div>
+            <div class="d-flex justify-content-center bg_primary py-4">
+                <div class="d-flex justify-content-between gap-4 container overflow-x-auto scroll_none">
+                    <div style="min-width: 220px;" class="bg-white rounded-2 w-100 p-3 d-flex flex-column align-items-center gap-4">
+                        <img src="./assets/partner1.png" alt="Partner img">
+                        <div>
+                            <h6 class="m-0">Maestro</h6>
+                            <span>Финансы</span>
+                        </div>
+                    </div>
+                    <div style="min-width: 220px;" class="bg-white rounded-2 w-100 p-3 d-flex flex-column align-items-center gap-4">
+                        <img src="./assets/partner2.png" alt="Partner img">
+                        <div>
+                            <h6 class="m-0">Maestro</h6>
+                            <span>Финансы</span>
+                        </div>
+                    </div>
+                    <div style="min-width: 220px;" class="bg-white rounded-2 w-100 p-3 d-flex flex-column align-items-center gap-4">
+                        <img src="./assets/partner3.png" alt="Partner img">
+                        <div>
+                            <h6 class="m-0">Maestro</h6>
+                            <span>Финансы</span>
+                        </div>
+                    </div>
+                    <div style="min-width: 220px;" class="bg-white rounded-2 w-100 p-3 d-flex flex-column align-items-center gap-4">
+                        <img src="./assets/partner4.png" alt="Partner img">
+                        <div>
+                            <h6 class="m-0">Maestro</h6>
+                            <span>Финансы</span>
+                        </div>
+                    </div>
+                    <div style="min-width: 220px;" class="bg-white rounded-2 w-100 p-3 d-flex flex-column align-items-center gap-4">
+                        <img src="./assets/partner5.png" alt="Partner img">
+                        <div>
+                            <h6 class="m-0">Maestro</h6>
+                            <span>Финансы</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container d-flex flex-column gap-3" style="padding: 60px 0 60px;">
+                <h2 style="font-size: 24px;">
+                    <span class="fw-bold">Новости</span>
+                    <span class="fw-normal">и события</span>
+                </h2>
+                <div>
+                    <div class="row gap-3 mx-1">
+                        <div class="col-lg overflow-hidden card_gr mb-lg-0 position-relative rounded-2 p-3 text-white" style="min-height: 250px;">
+                            <div class="d-flex flex-column gap-1">
+                                <img src="./assets/news.png" alt="News img" style="z-index: -1;width: 100%; min-height: 100%;" class="position-absolute object-fit-cover rounded-2 top-0 start-0">
+                                <span style="font-size: 14px;">10.05.2024</span>
+                                <h4 class="fs-5 w-75">Мы получили международный сертификат ISO 9001:2015</h4>
+                                <p style="font-size: 14px;" class="w-75">Успешное прохождение сертификации системы менеджмента качества в соответствии с требованиями международного стандарта</p>
+                            </div>
+                            <button class="border btn border-white text-white">Подробнее</button>
+                        </div>
+                        <div class="col-lg overflow-hidden card_gr position-relative rounded-2 p-3 text-white" style="height: 250px;">
+                            <div class="d-flex flex-column gap-1">
+                                <img src="./assets/news.png" alt="News img" style="z-index: -1;width: 100%; height: 100%;" class="position-absolute object-fit-cover rounded-2 top-0 start-0">
+                                <span style="font-size: 14px;">10.05.2024</span>
+                                <h4 class="fs-5 w-75">Мы получили международный сертификат ISO 9001:2015</h4>
+                                <p style="font-size: 14px;" class="w-75">Успешное прохождение сертификации системы менеджмента качества в соответствии с требованиями международного стандарта</p>
+                            </div>
+                            <button class="border btn border-white text-white">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="row mx-1 mt-3">
+                        <div class="col-lg mb-3 mb-lg-0 d-flex flex-column bg_main align-items-start justify-content-between me-3 position-relative rounded-2 p-3 text-white" style="height: 250px;">
+                            <div class="d-flex flex-column gap-1">
+                                <span style="font-size: 14px;">10.05.2024</span>
+                                <h4 class="fs-5 w-75">Название статьи</h4>
+                                <p style="font-size: 14px;" class="w-75">А здесь будет краткое описание статьи, чтобы понять о чем идет вообще речь</p>
+                            </div>
+                            <button class="border btn border-white text-white">Подробнее</button>
+                        </div>
+                        <div class="col-lg mb-3 mb-lg-0 d-flex flex-column bg_main align-items-start justify-content-between me-3 position-relative rounded-2 p-3 text-white" style="height: 250px;">
+                            <div class="d-flex flex-column gap-1">
+                                <span style="font-size: 14px;">10.05.2024</span>
+                                <h4 class="fs-5 w-75">Название статьи</h4>
+                                <p style="font-size: 14px;" class="w-75">А здесь будет краткое описание статьи, чтобы понять о чем идет вообще речь</p>
+                            </div>
+                            <button class="border btn border-white text-white">Подробнее</button>
+                        </div>
+                        <div class="col-lg mb-3 mb-lg-0 d-flex flex-column bg_primary align-items-start justify-content-between position-relative rounded-2 p-3 text-white" style="height: 250px;">
+                            <div class="d-flex flex-column gap-1">
+                                <span style="font-size: 14px;">10.05.2024</span>
+                                <h4 class="fs-5 w-75">Название статьи</h4>
+                                <p style="font-size: 14px;" class="w-75">А здесь будет краткое описание статьи, чтобы понять о чем идет вообще речь</p>
+                            </div>
+                            <button class="border btn border-white text-white">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="padding: 0 16px 60px;">
+            <div class="container">
+                <h2 style="font-size: 24px">
+                    <span class="fw-bold">Свяжитесь</span>
+                    <span class="fw-normal">с нами</span>
+                </h2>
+                <div class="row" style="margin-top: 25px;">
+                    <div class="shadow col-lg-7 mb-3 mb-lg-0 me-3 d-flex justify-content-between bg-light align-items-end position-relative rounded-3 overflow-hidden" style="">
+                        <img src="./assets/contact_vector.png" alt="vector" class="position-absolute end-0">
+                        <div class="p-3 d-flex justify-content-between position-relative flex-column h-100" style="min-height: 500px;">
+                            <img src="./assets/logo2.png" alt="Logo" style="width: 116px;height: 40px;">
+                            <div class="d-flex flex-column gap-2 position-relative z-1">
+                                <div class="d-flex flex-column gap-1">
+                                    <h6 class="fs-6 fw-bold m-0">Телефон</h6>
+                                    <span>+998 (71) 207-58-00</span>
+                                </div>
+                                <div class="d-flex flex-column gap-1">
+                                    <h6 class="fs-6 fw-bold m-0">Электронная почта</h6>
+                                    <span>info@impex-insurance.uz</span>
+                                </div>
+                                <div class="d-flex flex-column gap-1">
+                                    <h6 class="fs-6 fw-bold m-0">Адрес</h6>
+                                    <span>г. Ташкент, Юнусабадский район, Малая Кольцевая, 3А</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/contact_lady.png" alt="Lady" class="position-absolute end-0" style="width: 300px;height: 363px;margin-right: -10px;">
+                    </div>
+                    <div class="shadow col-lg bg_primary rounded-3 p-4 text-white">
+                        <h3 class="fs-3 fw-bold">Не нашли, что искали?</h3>
+                        <p>Заполните форму ниже и мы свяжемся с вами</p>
+                        <form class="px-3">
+                            <div class="row">
+                                <input type="text" class="col-md-4 mb-3 mb-md-0 me-3 px-3 border-0 rounded-2 py-2" style="outline: none;" placeholder="Имя">
+                                <input type="text" class="col px-3 border-0 rounded-2 py-2" style="outline: none;" placeholder="Эл. почта">
+                            </div>
+                            <div class="row mt-3">
+                                <textarea placeholder="Ваш вопрос" rows="6" class="rounded-2 px-3 py-2 m-0" style="outline: none; resize: none;"></textarea>
+                            </div>
+                            <div class="row mt-3">
+                                <input class="col-1" type="checkbox" id="check" style="width: 20px; height: 20px;">
+                                <label class="col" for="check">Я согласен на обработку персональных данных</label>
+                            </div>
+                            <div class="row mt-3">
+                                <button class="btn bg_main col-sm-3 col-6 offset-sm-9 text-white">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg_primary overflow-hidden" style="padding: 0 16px;height: 232px;">
+            <div class="container d-flex justify-content-md-between align-items-end h-100">
+                <div class="text-white py-4">
+                    <h3 class="fs-3 main_color">Подпишитесь на нашу рассылку</h3>
+                    <p class="mb-4">Будьте всегда в курсе наших новинок и акционных предложений</p>
+                    <div class="d-flex gap-3">
+                        <input type="text" placeholder="Эл. почта" class="px-3 py-1 rounded-1 border-0" style="outline: none;width: 280px;">
+                        <button style="width: 36px; height: 36px;" class="bg-transparent border_main rounded-circle main_color"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <img src="./assets/impex.png" alt="impex" class="position-relative" style="left: -10%;">
+            </div>
+            <img src="" alt="">
+        </section>
+        <section style="padding: 60px 16px 60px;">
+            <div class="container">
+                <h2 style="font-size: 24px">
+                    <span class="fw-normal">Наши</span>
+                    <span class="fw-bold">достижения</span>
+                </h2>
+                <div class="row mt-4">
+                    <div class="col-lg bg-light p-4 rounded-3 shadow me-3">
+                        <img src="./assets/certificate.svg" alt="Certificate">
+                        <h3 class="w-75 fs-4 fw-bold">Рейтинг АО «IMPEX INSURANCE» соответствует уровню uzA++</h3>
+                        <p class="w-75">Рейтинговое агентство «Ahbor-reyting» присвоило нам сертификат, который свидетельствует о том, что страховая компания имеет стабильные перспективы и очень высокую платежеспособность</p>
+                    </div>
+                    <div class="col-lg mt-3 mt-lg-0">
+                        <div class="row">
+                            <div class="col bg-light p-2 rounded-3 shadow">
+                                <img src="./assets/star.svg" alt="Certificate">
+                                <h3 class="w-75 fs-6 fw-bold mt-5">ТОП-5 рекламодателей на ТВ</h3>
+                                <p class="w-75 fs-6">Категория “Страховые услуги”</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md bg-light p-2 me-3 rounded-3 shadow">
+                                <img src="./assets/star.svg" alt="Certificate">
+                                <h3 class="w-75 fs-6 fw-bold mt-5">ТОП-5 рекламодателей на ТВ</h3>
+                                <p class="w-75 fs-6">Категория “Страховые услуги”</p>
+                            </div>
+                            <div class="col-md mt-3 mt-lg-0 bg-light p-2 rounded-3 shadow">
+                                <img src="./assets/star.svg" alt="Certificate">
+                                <h3 class="w-75 fs-6 fw-bold mt-5">ТОП-5 рекламодателей на ТВ</h3>
+                                <p class="w-75 fs-6">Категория “Страховые услуги”</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="padding: 120px 16px 60px;">
+            <div class="container bg_primary d-flex align-items-end rounded-3" style="min-height: 300px;">
+                <div class="text-white p-3 d-flex flex-column justify-content-between h-100">
+                    <h2 class="w-50 fs-4">У Вас еще нет приложения «IMPEX INSURANCE»?</h2>
+                    <p>Установите или обновите до последней версии по одной из ссылок или по QR-коду</p>
+                    <div class="d-flex align-items-end">
+                        <img src="./assets/qr.png" alt="qr">
+                        <img style="margin-bottom: -16px;" src="./assets/store1.png" alt="store" class="d-none d-lg-block">
+                        <img style="margin-bottom: -16px;" src="./assets/store2.png" alt="store" class="d-none d-lg-block">
+                    </div>
+                </div>
+                <img src="./assets/phone.png" alt="phone" class="d-none d-lg-block" style="margin-bottom: -40px;">
+            </div>
+        </section>
+        <footer class="bg_primary pb-4 overflow-hidden">
+            <div class="container">
+                <ul class="d-flex flex-wrap flex-md-row flex-column position-relative list-unstyled gap-3 py-3 border-bottom">
+                    <li><a href="#" class="text-white nowrap text-decoration-none">Все страховые продукты </a></li>
+                    <li><a href="#" class="text-white nowrap text-decoration-none">Часто задаваемые вопросы</a></li>
+                    <li><a href="#" class="text-white nowrap text-decoration-none">Политика обработки персональных данных</a></li>
+                    <li><a href="#" class="text-white nowrap text-decoration-none">Политика конфиденциальности</a></li>
+                </ul>
+                <div class="d-flex justify-content-between flex-wrap flex-md-row flex-column-reverse">
+                    <div>
+                        <div class="d-flex flex-column gap-2 py-4 pb-5">
+                            <a href="tel:+998712075800" class="fs-3 fw-bold text-decoration-none main_color">+998 (71) 207-58-00</a>
+                            <p class="text-white">Круглосуточный телефон</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="d-flex justify-content-center align-items-center bg-white text-dark rounded-1 text-decoration-none" style="width: 30px; height: 30px;"><i class="fa-brands fa-telegram"></i></a>
+                                <a href="#" class="d-flex justify-content-center align-items-center bg-white text-dark rounded-1 text-decoration-none" style="width: 30px; height: 30px;"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" class="d-flex justify-content-center align-items-center bg-white text-dark rounded-1 text-decoration-none" style="width: 30px; height: 30px;"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="d-flex justify-content-center align-items-center bg-white text-dark rounded-1 text-decoration-none" style="width: 30px; height: 30px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="d-flex justify-content-center align-items-center bg-white text-dark rounded-1 text-decoration-none" style="width: 30px; height: 30px;"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" class="d-flex justify-content-center align-items-center bg-white text-dark rounded-1 text-decoration-none" style="width: 30px; height: 30px;"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column gap-1 align-items-start">
+                            <img src="./assets/logo3.png" alt="Logo">
+                            <span class="text-white">2024 - АО «IMPEX INSURANCE». Все права защищены  </span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column gap-5 py-4">
+                        <div class="d-flex gap-5">
+                            <ul class="list-unstyled d-flex flex-column gap-1 text-white">
+                                <li>О компании</li>
+                                <li>Все услуги</li>
+                                <li>Открытые данные</li>
+                                <li>Новости</li>
+                            </ul>
+                            <ul class="list-unstyled d-flex flex-column gap-1 text-white">
+                                <li>Меню один</li>
+                                <li>Два Меню</li>
+                                <li>Меню номер три</li>
+                                <li>Снова меню</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column gap-1">
+                            <a class="main_color text-decoration-none" href="info@impex-insurance.uz">info@impex-insurance.uz</a>
+                            <span class="text-white">Для отправки электронной почты и корреспонденции</span>
+                        </div>
+                    </div>
+                    <div style="height: 280px;" class="w-100 position-absolute z-2 start-0 d-flex justify-content-center align-items-center">
+                        <img src="./assets/vector.png" alt="Vector">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
